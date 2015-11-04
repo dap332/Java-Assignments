@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+
+class PermGen{
+    
+
+    public static void PermGen(String word, String fullWord){
+
+	if(word.length() == 1){
+	    System.out.println(word);
+	}
+	else{
+	    for (int i = 0; i < word.length(); i ++){
+		System.out.println( i + 1 + ": ");
+		
+
+	    }
+	}
+
+    }
+
+    public static void main(String[] args){
+	
+	Scanner s1 = new Scanner(System.in);
+
+        System.out.println("Please enter your word here:");
+
+	String fullWord = s1.nextLine();
+
+	
+	PermGen(fullWord,fullWord);
+
+    }
+
+
+}

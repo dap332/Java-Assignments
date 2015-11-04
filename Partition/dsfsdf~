@@ -1,0 +1,25 @@
+
+
+class Partition{
+    
+    public static void partitioner(int n ){
+	if (n == 1){
+	    return;
+	}
+	else if(n > 2){
+	    System.out.print(n - (n -1));
+	    n -= 1;
+	    System.out.print(n);
+	    partitioner(n)
+	    
+	}
+
+    }
+
+
+    public static void main(String[] args){
+	
+	partitioner(6);
+
+    }
+}
