@@ -1,0 +1,40 @@
+Will take input from stdin.
+
+enter a series of numbers and it will decode it to words that can be found in a word list file.
+
+Just like on a 1-9 old fashioned phone dial, the letters come from the digits.
+
+e.g. a 2 is 'A,a' or 'B,b' or 'C,c'
+     a 3 is 'D,d' or 'E,e' or 'F,f' and so on.
+
+	Think of a phone pad.
+
+	a 0 or any amount of 0's is consider ONE space.
+
+	a 1 is unknown
+
+	If the numbers don't match a word, it will show '*' for the rest of the word. This also occurs one a 1
+
+	Was not built to handle contractions and other certain symbols.
+
+	If multiple words come from the same digits then all the options will be shown in paretheses separate by |'s
+
+		e.g. 5683 would show up as (Jove|love|jove) because all those words are in the wordlist that have the same numeric encoding.
+
+	The file words will have all a list of words that the program uses.
+
+input one series of digits at a time and get the output.
+press enter to input again.
+
+Program ends on EOT character .
+
+
+e.g.
+
+004056830007764726077770
+
+This will print
+
+(g|h|i) (Jove|love|jove) program ****
+
+Since there are multiple possible words for the first two sets of digits, and none for the last set.
